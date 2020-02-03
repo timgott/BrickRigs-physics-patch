@@ -2,7 +2,9 @@
 Unofficial fix for the bouncing bug on the roads in the racetrack, city and desert maps in Brick Rigs.
 
 ## Installing
-Copy the UserEngine.ini file to [BrickRigs.exe folder]/BrickRigs/Config/ (create this folder if it doesn't exist).
+1. Save `UserEngine.ini` to your computer.
+2. Move the file to `[BrickRigs.exe folder]/BrickRigs/Config/` (create this folder if it doesn't exist).
+3. Start the game.
 
 ## How it works
 BrickRigs simulates aerodynamics, collisions and suspensions, which means the engine has to solve high-order nonlinearities. If the time step is too large, the integration approximation will stray too far from the exact solution, resulting in glitches. Usually this can be done a lot better with a high fixed update rate. By default, BrickRigs is configured to run at a variable physics step synced with rendering, which turns out to be too imprecise for simulation of vehicles at higher speeds. 
